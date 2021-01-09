@@ -1,0 +1,112 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body div,
+html div {
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container,
+html .container {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 16384px;
+  height: 16384px;
+}
+
+body .quarter,
+html .quarter {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 8192px;
+  height: 8192px;
+}
+
+body .image-container,
+html .image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #444;
+}
+
+body .image,
+html .image {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 2048px;
+  height: 2048px;
+}
+
+body .blocks-container,
+html .blocks-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+body .block,
+html .block {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  border: 1px transparent solid;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: background 0.2s, border 0.5s ease, opacity 1s;
+  transition: background 0.2s, border 0.5s ease, opacity 1s;
+  opacity: 0;
+}
+
+body .block:hover,
+html .block:hover {
+  cursor: pointer;
+  -webkit-transition: none;
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 0.5px rgba(209, 209, 209, 0.4) solid;
+  opacity: 1;
+}
+
+body #tooltip,
+html #tooltip {
+  display: none;
+  position: fixed;
+  width: 133px;
+  height: 42px;
+  border-radius: 3px;
+  background-color: #eee;
+  font-size: 11px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 7px;
+  padding-left: 12px;
+  z-index: 100;
+}
+
+body #tooltip .x,
+body #tooltip .y,
+html #tooltip .x,
+html #tooltip .y {
+  margin-bottom: 3px;
+  letter-spacing: 1px;
+}
+
+body #tooltip .x i,
+body #tooltip .y i,
+html #tooltip .x i,
+html #tooltip .y i {
+  color: #aaa;
+}
+/*# sourceMappingURL=style.css.map */
